@@ -2,6 +2,9 @@ import os
 import streamlit as st
 from PIL import Image
 
+st.title('Streamlit')
+st.header('How to Create Your Own App!')
+
 cwd = os.getcwd()
 
 image_file = ('pic_1.PNG')
@@ -9,8 +12,7 @@ image_path = os.path.join(cwd, image_file)
 img = Image.open(image_path)
 st.image(img)
 
-st.title('Streamlit')
-st.header('How to Create Your Own App!')
+
 st.write('')
 
 st.info('Go to GitHub.com')
